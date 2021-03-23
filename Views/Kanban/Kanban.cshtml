@@ -1,0 +1,90 @@
+﻿@using Syncfusion.EJ2
+@model ProjectMgt.ViewModels.KanbanViewModel
+
+@{
+    ViewBag.Title = "Kanban";
+}
+
+<h2>Kanban Board</h2>
+
+
+
+<div>
+    
+    @Html.EJS().Kanban("kanban").KeyField("Status").DataSource(Model.TasksList).Columns(col =>
+    {
+        col.HeaderText("To Do").KeyField("Open").Add();
+        col.HeaderText("In Progress").KeyField("InProgress").Add();
+        col.HeaderText("Testing").KeyField("Testing").Add();
+        col.HeaderText("Done").KeyField("Close").Add();
+    }).CardSettings(card =>  {
+                                 card.ContentField("Summary").HeaderField("Id");
+    }).Render()
+</div>
+
+<div class="col-xs-12 col-sm-12 col-lg-6 col-md-6">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title newTask" id="exampleModalLabel">New task</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    @using (Html.BeginForm("Save", "Movies"))
+                    {
+                        <div class="form-group">
+                            @Html.LabelFor(m => m.Movie.Name)
+                            @Html.TextBoxFor(m => m.Movie.Name, new { @class = "form-control" })
+                        </div>
+                        <div class="form-group">
+                            @Html.Label("Release Date")
+                            @Html.TextBoxFor(m => m.Movie.ReleaseDate, "{0:d MMM yyyy}", new { @class = "form-control" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Genre")
+                            @Html.DropDownListFor(m => m.Genre.genre, new SelectList(Model.GenreList, "", "Genre"), "Select genre", new { @class = "form-control" })
+                        </div>
+
+                        <div class="form-group">
+                            @Html.Label("Number in stock")
+                            @Html.TextBoxFor(m => m.Movie.NumberInStock, new { @class = "form-control" })
+                        </div>
+                        @Html.HiddenFor(m => m.Movie.Id)
+                        @Html.HiddenFor(m => m.Movie.DateAdded)
+                        <button type="submit" class="btn btn-primary">Save</button>
+
+
+                    }
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .newTask {
+        width: fit-content;
+        height: fit-content;
+        font-family: "Segoe UI";
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 47px;
+        text-align: center;
+        text-decoration: underline;
+    }
+</style>
