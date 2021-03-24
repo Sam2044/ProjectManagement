@@ -7,13 +7,13 @@ namespace ProjectMgt.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class CreatedTableKanban : IMigrationMetadata
+    public sealed partial class AddedNewTables : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CreatedTableKanban));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddedNewTables));
         
         string IMigrationMetadata.Id
         {
-            get { return "202103231824091_CreatedTableKanban"; }
+            get { return "202103232341154_AddedNewTables"; }
         }
         
         string IMigrationMetadata.Source

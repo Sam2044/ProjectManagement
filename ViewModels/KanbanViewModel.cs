@@ -9,5 +9,9 @@ namespace ProjectMgt.ViewModels
     public class KanbanViewModel
     {
         public List<Kanban> TasksList { get; set; }
+
+        public Kanban Kanban { get; set; }
+
+        public List<StatusPriority> StatusPriorities { get; set; }
     }
 }

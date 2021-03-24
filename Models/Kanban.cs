@@ -7,7 +7,7 @@ namespace ProjectMgt.Models
 {
     public class Kanban
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Title { get; set; }
         public string Status { get; set; }
         public string Summary { get; set; }
@@ -18,5 +18,9 @@ namespace ProjectMgt.Models
         public string Assignee { get; set; }
         public int RankId { get; set; }
         public string Color { get; set; }
+
+        
+
+       
     }
 }

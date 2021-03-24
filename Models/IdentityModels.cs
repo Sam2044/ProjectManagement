@@ -21,6 +21,10 @@ namespace ProjectMgt.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public DbSet<Kanban> Kanban { get; set; }
+
+        public DbSet<StatusPriority> SP { get; set; }
+
+        
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
