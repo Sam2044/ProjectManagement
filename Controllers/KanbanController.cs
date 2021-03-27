@@ -99,7 +99,7 @@ namespace ProjectMgt.Controllers
 
 
 
-            return View(viewModel);
+            return PartialView(viewModel);
         }
 
         [HttpPost]
