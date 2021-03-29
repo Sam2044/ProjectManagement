@@ -206,13 +206,16 @@
     <Compile Include="ViewModels\KanbanViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-ProjectMgt-20210320010453.mdf" />
+    <Content Include="App_Data\aspnet-ProjectMgt-20210320010453_log.ldf">
+      <DependentUpon>aspnet-ProjectMgt-20210320010453.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\css\normalize.css" />
-    <Content Include="Content\css\tasksamurai.webflow.css" />
-    <Content Include="Content\css\webflow.css" />
+    <Content Include="Content\wcss\normalize.css" />
+    <Content Include="Content\wcss\tasksamurai.webflow.css" />
+    <Content Include="Content\wcss\webflow.css" />
     <Content Include="Content\ej2\bootstrap-dark.css" />
     <Content Include="Content\ej2\bootstrap.css" />
     <Content Include="Content\ej2\bootstrap4.css" />
@@ -290,9 +293,7 @@
     <Content Include="Views\Kanban\Kanban.cshtml" />
     <Content Include="Views\Login\LoginPretty.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
