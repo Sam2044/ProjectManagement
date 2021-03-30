@@ -52,7 +52,9 @@
             col.HeaderText("Done").KeyField("Done").Add();
         }).CardSettings(card =>
             {
-                                     card.ContentField("Summary").HeaderField("Title");
+                card.ContentField("Summary").HeaderField("Title");
+        }).SwimlaneSettings(swim => {
+                                        swim.KeyField("Assignee");
         }).Render()
     </div>
 
@@ -100,6 +102,7 @@
                             </div>
 
                             @Html.HiddenFor(k => k.Kanban.Id)
+                            @Html.AntiForgeryToken()
                             @*@Html.HiddenFor(k => k.Kanban.RankId)*@
                             <button type="submit" class="btn btn-primary">Add</button>
 

@@ -103,6 +103,7 @@ namespace ProjectMgt.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Kanban kanban)
         {
             var spList = _context.SP.ToList();
