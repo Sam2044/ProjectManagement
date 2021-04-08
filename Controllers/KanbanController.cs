@@ -11,6 +11,7 @@ using ProjectMgt.ViewModels;
 
 namespace ProjectMgt.Controllers
 {
+    [Authorize]
     public class KanbanController : Controller
     {
         private ApplicationDbContext _context;

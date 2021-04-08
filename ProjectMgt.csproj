@@ -195,6 +195,10 @@
     <Compile Include="Migrations\202103232341154_AddedNewTables.Designer.cs">
       <DependentUpon>202103232341154_AddedNewTables.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104062337136_AddNameToMigration.cs" />
+    <Compile Include="Migrations\202104062337136_AddNameToMigration.designer.cs">
+      <DependentUpon>202104062337136_AddNameToMigration.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -318,6 +322,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202103232341154_AddedNewTables.resx">
       <DependentUpon>202103232341154_AddedNewTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104062337136_AddNameToMigration.resx">
+      <DependentUpon>202104062337136_AddNameToMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

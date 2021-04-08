@@ -10,7 +10,7 @@ namespace ProjectMgt.Controllers
     {
         public ActionResult Index()
         {
-            return Redirect("Login/LoginPretty");
+            return Redirect("Account/Login");
         }
 
         public ActionResult About()
