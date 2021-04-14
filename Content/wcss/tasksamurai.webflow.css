@@ -173,3 +173,7 @@
 .input-validation-error {
     border: 2px solid red;
 }
+
+.black {
+    color: #000000;
+}

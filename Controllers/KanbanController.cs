@@ -142,6 +142,17 @@ namespace ProjectMgt.Controllers
             return RedirectToAction("Kanban", "Kanban");
         }
 
+        public ActionResult DeleteTask(Kanban kanban)
+        {
+            var itemToRemove = _context.Kanban.SingleOrDefault(x => x.Title == kanban.Title);
+
+            if (itemToRemove != null)
+            {
+                _context.Kanban.Remove(itemToRemove);
+                _context.SaveChanges();
+            }
+            return RedirectToAction("Login", "Account");
+        }
         
     }
 }
