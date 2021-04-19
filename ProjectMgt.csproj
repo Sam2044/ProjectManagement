@@ -183,6 +183,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\GraphController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KanbanController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -298,6 +299,7 @@
     <Content Include="Views\Kanban\Kanban.cshtml" />
     <Content Include="Views\Login\LoginPretty.cshtml" />
     <Content Include="Views\Register\Register.cshtml" />
+    <Content Include="Views\Graph\Graph.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
