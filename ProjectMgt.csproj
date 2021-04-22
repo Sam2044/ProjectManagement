@@ -192,13 +192,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202103232341154_AddedNewTables.cs" />
-    <Compile Include="Migrations\202103232341154_AddedNewTables.Designer.cs">
-      <DependentUpon>202103232341154_AddedNewTables.cs</DependentUpon>
+    <Compile Include="Migrations\202104191658570_DeletedOldMigrations.cs" />
+    <Compile Include="Migrations\202104191658570_DeletedOldMigrations.designer.cs">
+      <DependentUpon>202104191658570_DeletedOldMigrations.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202104062337136_AddNameToMigration.cs" />
-    <Compile Include="Migrations\202104062337136_AddNameToMigration.designer.cs">
-      <DependentUpon>202104062337136_AddNameToMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202104191821248_NewAspUsersTable.cs" />
+    <Compile Include="Migrations\202104191821248_NewAspUsersTable.designer.cs">
+      <DependentUpon>202104191821248_NewAspUsersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202104222101356_StatusPrioritiesAndKanban.cs" />
+    <Compile Include="Migrations\202104222101356_StatusPrioritiesAndKanban.designer.cs">
+      <DependentUpon>202104222101356_StatusPrioritiesAndKanban.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -249,6 +253,7 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\ej2\ej2.min.js" />
     <Content Include="Scripts\ej2\ej2.min.js.map" />
+    <None Include="Properties\PublishProfiles\ProjectMgt20210422105100 - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\tasksamurai - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\js\webflow.js" />
@@ -301,7 +306,6 @@
     <Content Include="Views\Register\Register.cshtml" />
     <Content Include="Views\Graph\Graph.cshtml" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -322,11 +326,14 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202103232341154_AddedNewTables.resx">
-      <DependentUpon>202103232341154_AddedNewTables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202104191658570_DeletedOldMigrations.resx">
+      <DependentUpon>202104191658570_DeletedOldMigrations.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104062337136_AddNameToMigration.resx">
-      <DependentUpon>202104062337136_AddNameToMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202104191821248_NewAspUsersTable.resx">
+      <DependentUpon>202104191821248_NewAspUsersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104222101356_StatusPrioritiesAndKanban.resx">
+      <DependentUpon>202104222101356_StatusPrioritiesAndKanban.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

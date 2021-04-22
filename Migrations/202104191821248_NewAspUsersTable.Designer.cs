@@ -7,13 +7,13 @@ namespace ProjectMgt.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class AddNameToMigration : IMigrationMetadata
+    public sealed partial class NewAspUsersTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddNameToMigration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(NewAspUsersTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "202104062337136_AddNameToMigration"; }
+            get { return "202104191821248_NewAspUsersTable"; }
         }
         
         string IMigrationMetadata.Source

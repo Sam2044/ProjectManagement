@@ -1,4 +1,4 @@
-namespace ProjectMgt.Migrations
+﻿namespace ProjectMgt.Migrations
 {
     using System;
     using System.Data.Entity;
@@ -7,6 +7,7 @@ namespace ProjectMgt.Migrations
 
     internal sealed class Configuration : DbMigrationsConfiguration<ProjectMgt.Models.ApplicationDbContext>
     {
+        
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
@@ -16,7 +17,7 @@ namespace ProjectMgt.Migrations
         {
             //  This method will be called after migrating to the latest version.
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
+            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
         }
     }

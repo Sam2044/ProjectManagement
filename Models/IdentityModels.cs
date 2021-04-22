@@ -25,7 +25,10 @@ namespace ProjectMgt.Models
     {
         public DbSet<Kanban> Kanban { get; set; }
 
+        
         public DbSet<StatusPriority> SP { get; set; }
+
+        
 
         
         public ApplicationDbContext()
